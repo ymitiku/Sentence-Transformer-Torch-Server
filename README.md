@@ -34,3 +34,9 @@ Once all the above steps are followed correctly, all files required to deploy se
 ```bash
 torchserve --start --model-store model_store --models bert=bert.mar;
 ```
+
+
+## Testing the server
+```
+curl -X POST http://127.0.0.1:8080/predictions/bert -T hello.txt
+```
