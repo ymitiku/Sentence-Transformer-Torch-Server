@@ -7,7 +7,7 @@ Since torch-serve creates working directory dynamically at runtime and there is 
 python transform_files.py --path model_results
 
 ```
-The `path` argument should be model_results folder located at [here](https://www.kaggle.com/skylord/coronawhy?select=sentence_transformer_nli) under `sentence_transformer_nli` folder.
+The `path` argument should be `model_results` folder located at [here](https://www.kaggle.com/skylord/coronawhy?select=sentence_transformer_nli) under `sentence_transformer_nli` folder.
 
 ## Step 2 Building command for torch-archive-model
 The following script can be used to create a command to run `torch-model-archiver` program.
