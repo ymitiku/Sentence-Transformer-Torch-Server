@@ -1,4 +1,4 @@
-# Scripts to deploy Sentence tranformer model
+# Scripts to deploy Sentence tranformer model with torchserve
 This repository contains scripts to deploy sentence transformer model located [here](https://www.kaggle.com/skylord/coronawhy?select=sentence_transformer_nli) under `sentence_transformer_nli` folder. Sentence transformer saves model checkpoints inside folders. At the time of writing these scripts, [torch-serve](https://pytorch.org/serve/) does not support folder for extra files. This repository is intended to create command to deploy sentence transformer model using torch-serve. 
 ## How does it work?
 First the scripts are used to add  `bert_` prefix for files inside `0_BERT` folder and prefix `pooling` for files inside `1_Pooling` folder. Then this prefix is used to move the files to respective folder dynamically at runtime inside. Moving the files has been handling inside [handler.py](handler.py)
