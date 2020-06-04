@@ -1,0 +1,6 @@
+archive-command.sh
+logs/*
+model_results/*
+model_store/*
+model_logs/*
+*.mar
